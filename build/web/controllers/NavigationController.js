@@ -13,9 +13,11 @@ app1.config(function($routeProvider){
             templateUrl: "views/AboutUs.html"
         })
         .when("/searchUserType",{
+            controller: 'SearchByType',
             templateUrl: "views/SearchByType.html"
         })
         .when("/contactUs",{
+            controller: 'ContactUs',
             templateUrl: "views/ContactUs.html"
         })
         .otherwise({redirectTo: '/'});
