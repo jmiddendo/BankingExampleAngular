@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Welcome to the user directory!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="resources/css/pageDressings.css" type="text/css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+        <script src="resources/js/NavigationController.js"></script>
+    </head>
+    <body ng-app="ngCustomerDirectory">
+        <form>
+            <div id="header" class="header" >
+                <div id="headerOpts" class="headerOptions" >
+                    <a href="#">Home</a>
+                    <label id="lblSpacer">&#160;&#160;</label>
+                    <a href="#aboutUs">About Us</a>
+                    <label id="lblSpacerOne">&#160;&#160;</label>
+                    <a href="#searchUserType">Search User By Type</a>
+                    <label id="lblSpacerTwo">&#160;&#160;</label>
+                    <a href="#contactUs">Contact Us</a>
+                </div>
+            </div>
+            <div ng-view></div>
+        </form>
+    </body>
+</html>
